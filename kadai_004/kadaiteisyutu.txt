@@ -1,0 +1,24 @@
+tanzawayuusuke@MacBook-Pro ~ % cd /Users/tanzawayuusuke/Desktop/git_challenge
+tanzawayuusuke@MacBook-Pro git_challenge % touch hello_world.txt
+tanzawayuusuke@MacBook-Pro git_challenge % echo Hello,world > hello_world.txt
+tanzawayuusuke@MacBook-Pro git_challenge % git add .
+tanzawayuusuke@MacBook-Pro git_challenge % git commit -m"hello_world.txtを追加"
+[main 4dde0ce] hello_world.txtを追加
+ 2 files changed, 1 deletion(-)
+tanzawayuusuke@MacBook-Pro git_challenge % echo こんにちは、世界！ >> hello_world.txt
+tanzawayuusuke@MacBook-Pro git_challenge % git add .                           
+tanzawayuusuke@MacBook-Pro git_challenge % git commit -m"日本語訳を追加"       
+[main ed3e86e] 日本語訳を追加
+ 2 files changed, 1 insertion(+)
+tanzawayuusuke@MacBook-Pro git_challenge % git log -2
+commit ed3e86e7d7d6d9ed4b24ca3c6899d6c31b1de46a (HEAD -> main)
+Author: yuusuke-cpa <soutenokokorowo@icloud.com>
+Date:   Fri Feb 9 16:23:45 2024 +0900
+
+    日本語訳を追加
+
+commit 4dde0cefa6f67b3994084e17423c06eae18c4ea4
+Author: yuusuke-cpa <soutenokokorowo@icloud.com>
+Date:   Fri Feb 9 16:13:35 2024 +0900
+
+    hello_world.txtを追加
